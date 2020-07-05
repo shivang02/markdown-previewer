@@ -1,38 +1,118 @@
+/*The Background*/
 .App {
   text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 5rem;
+  background: linear-gradient(45deg,#800101,#738002,#02883a,#023492);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*The Outer Translucent Container element*/
+.container {
+  background-color: rgba(240, 248, 255, 0.411);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  color: rgba(82, 81, 81, 0.76);
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 2rem 2rem 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title h1{
+  font-size: 3rem;
+}
+
+/*The Add Breaks Button*/
+.options{
+  background-color: #f0f8ff69;
+  width: 8rem;
+  margin-bottom: 2rem;
+  border-radius: 8rem;
+  padding: 0.5rem;
+}
+/*The container of Text Area and Markdown Previewer*/
+.play-ground {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*Common properties of Text Area and Markdown Previewer*/
+.area-view {
+  min-width: 40%;
+  text-align: left;
+  width: inherit;
+  min-height: 100%;
+  border-radius: 2rem;
+}
+/*Specific properties of Text Area*/
+.input-box {
+  padding: 1rem;
+  margin: 0 1rem 0 1rem;
+  background: #ffffffde;
+}
+/*Specific properties of Markdown Previewer*/
+.preview-box {
+  background: #ffffff71;
+  padding: 0 1rem 0 1rem;
+}
+/*---------------------------*/
+/*--To wrap the text area and previewer in smaller devices--*/
+/*--------------------------*/
+@media only screen and (max-width: 1000px) {
+  .play-ground {
+    width: 100%;
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .area-view {
+    min-width: 40%;
+    width: inherit;
+    min-height: 20rem;
+    border-radius: 2rem;
   }
+
+  .input-box {
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+    background: #ffffffde;
+  }
+
+  .preview-box {
+    background: #ffffff71;
+    margin: 0 0 1rem 0;
+    text-align: left;
+    padding-left: 1rem;
+  }
+}
+/*--------------------------*/
+/*--------------------------*/
+
+/*To add a left border for Blockquotes*/
+blockquote {
+  
+  border-left: 0.8rem solid rgb(97, 93, 93);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+ 
+}
+blockquote:before {
+  color: #ccc;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
 }

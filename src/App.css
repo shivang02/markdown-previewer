@@ -74,7 +74,7 @@
 /*Specific properties of Markdown Previewer*/
 .preview-box {
   background: #ffffff71;
-  padding: 0 1rem 0 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 /*---------------------------*/
 /*--To wrap the text area and previewer in smaller devices--*/

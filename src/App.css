@@ -87,7 +87,7 @@
   .container {
     border-radius: 0;
   }
-  
+
   .play-ground {
     width: 100%;
     padding: 0 2rem 0 2rem;
@@ -113,6 +113,7 @@
     background: #ffffff71;
     margin: 0 0 1rem 0;
     text-align: left;
+    padding-top: 1rem;
     padding-left: 1rem;
   }
 }

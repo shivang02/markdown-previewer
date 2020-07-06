@@ -58,7 +58,7 @@ class App extends Component {
         <div className="container">
         <div className="title" >
             <h1>MarkDown Previewer</h1>
-            <p>Just start typing Markdown syntax in the left area and see results on the right!</p>
+            <p>Just start typing Markdown syntax and see the results!</p>
         </div>
           <div className="options">
             <input type="checkbox" checked={this.state.breaks} onClick={this.addBreaks} id="add-breaks" />

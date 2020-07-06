@@ -80,6 +80,14 @@
 /*--To wrap the text area and previewer in smaller devices--*/
 /*--------------------------*/
 @media only screen and (max-width: 1000px) {
+  .App {
+    padding: 0;
+  }
+
+  .container {
+    border-radius: 0;
+  }
+  
   .play-ground {
     width: 100%;
     padding: 0 2rem 0 2rem;
